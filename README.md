@@ -36,10 +36,19 @@ Although this sprint has high pressure in its execution, the goal is self-learni
 ## Instructions ✨
 
 1. Fork this repository 
-2. Add your code and exercises to the appropriate week folder
-   - `Week1` / `a` (github-name-initial) / `aajay` (username) /  `lesson-1` (lesson folder) / `hello_world.py` (python filename)
-   -
-     ```
+2. Add your code and exercises to the appropriate week folder (in 4 Easy 👍 steps, making sure to `🚨🚨🚨 USE lowercase characters & hyphens'-' or underscores'_' on spaces ON folder names, the GitHub way ✅) 
+   
+   - 🌱 **STEP 1:** enter the respective **week** folder you're currently in, _e.g week 1 for beginners._  
+   - 🌱 **STEP 2:** Create a folder with your GitHub-username **initial** as the folder name(first character, e.g `'a'` if the username is 'Ajaay')
+   - 🌱 **STEP 3:** Create a folder with your GitHub **username** as the folder name ( e.g `'ajaay'` if the username is 'Ajaay')
+   - 🌱 **STEP 4:** Create the folder **lesson** folder e.g `'lesson-1'` for the content related to lesson-1 (chapter 1)
+   - 
+   - 🌿 **BONUS TIP:** You can add your own folders, exercise folders or modules inside that lesson's folder to have a good folder structure and also maintain best practices (see below: ⏩🥋 )
+   - 
+   - 🌳 **COMPLETE EXAMPLE:** `Week1` / `a` (github-name-initial) / `aajay` (username) /  `lesson-1` (lesson folder) / `hello_world.py` (python filename)
+
+
+```
 flexing-pythonistas/
 └── week1/
 | ├── .gitignore
@@ -47,7 +56,8 @@ flexing-pythonistas/
 │ │ └── aajay/
 │ │ │ └── lesson-1/
 │ │ │ | └── hello-world.py  
-     ```
+```
+
 4. Submit a pull request when you're ready for review
 5. We will merge your work and add your name to the CONTRIBUTORS file
 
