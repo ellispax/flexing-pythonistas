@@ -37,7 +37,17 @@ Although this sprint has high pressure in its execution, the goal is self-learni
 
 1. Fork this repository 
 2. Add your code and exercises to the appropriate week folder
-   - `Week1` / `a` (github-name-initial) / `lesson-1` (lesson folder) / `hello_world.py` (python filename) 
+   - `Week1` / `a` (github-name-initial) / `aajay` (username) /  `lesson-1` (lesson folder) / `hello_world.py` (python filename)
+   -
+     ```
+flexing-pythonistas/
+└── week1/
+| ├── .gitignore
+│ └── a/
+│ │ └── aajay/
+│ │ │ └── lesson-1/
+│ │ │ | └── hello-world.py  
+     ```
 4. Submit a pull request when you're ready for review
 5. We will merge your work and add your name to the CONTRIBUTORS file
 
