@@ -42,7 +42,7 @@ Although this sprint has high pressure in its execution, the goal is self-learni
 5. We will merge your work and add your name to the CONTRIBUTORS file
 
 - **The file structure is as follows** 🥋
-    - here the GitHub usernames are *john-doe*, *exavier* and *elizabeth-greene*   
+    - here the GitHub usernames are ***`john-doe`***, ***`exavier`*** and ***`elizabeth-greene`***   
 ```
 flexing-pythonistas/
 ├── week1/
