@@ -8,34 +8,40 @@ import random
 students = {}
 
 def add_student():
-  name = input("Enter student's name: ")
-  score = random.randint(0, 100)
-  students[name] = score
+  name = input("Enter student's name: ").lower()
+  score = int(input("Enter student's score: "))
+  status = "Pass" if score >= 50 else "Fail"
+  students[name] = {"score": score, "status": status}
 
 def view_student_score():
-  name = input("Enter student's name: ")
+  name = input("Enter student's name: ").lower()
   if name in students:
-    print(f"Student {name}'s score is {students[name]}.")
+    print(f"Student {name}'s score is {students[name]['score']}.")
+    print(f"Student {name}'s status is {students[name]['status']}.")
   else:
     print(f"Student {name} is not in the system.")
 
 def view_all_students():
-  for name, score in students.items():
-    print(f"Student {name}'s score is {score}.")
+  for name, student in students.items():
+    print(f"Student {name}'s score is {student['score']}.")
+    print(f"Student {name}'s status is {student['status']}.")
 
 def display_class_average():
   total_score = 0
   number_of_students = len(students)
   for score in students.values():
-    total_score += score
+    total_score += score["score"]
   average_score = total_score / number_of_students
   print(f"The class average is {average_score}.")
 
-def delete_student():
-  name = input("Enter student's name to delete: ")
+def edit_student_score():
+  name = input("Enter student's name to edit: ").lower()
   if name in students:
-    del students[name]
-    print(f"Student {name} has been deleted.")
+    score = int(input("Enter new score: "))
+    status = "Pass" if score >= 50 else "Fail"
+    students[name] = {"score": score, "status": status}
+    print(f"Student {name}'s score has been updated to {score}.")
+    print(f"Student {name}'s status is now {status}.")
   else:
     print(f"Student {name} is not in the system.")
 
@@ -46,7 +52,7 @@ def main():
     print("2. View student's score")
     print("3. View all students")
     print("4. Display class average")
-    print("5. Delete student")
+    print("5. Edit student's score")
     print("6. Quit")
     option = int(input())
 
@@ -59,7 +65,7 @@ def main():
     elif option == 4:
       display_class_average()
     elif option == 5:
-      delete_student()
+      edit_student_score()
     elif option == 6:
       break
 
